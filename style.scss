@@ -1,0 +1,85 @@
+$main-color : rgb(81, 31, 172);
+$secondary-color: rgb(19, 10, 44);
+$text-color: rgb(159, 127, 219);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $main-color;
+  font-family: 'Sono', sans-serif;
+}
+.contact-area {
+  margin: auto;
+  width: 30%;
+  padding-top: 35px;
+}
+.contact-adder-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: $secondary-color;
+  padding: 20px 50px;
+  & h2 {
+    color: $text-color;
+    padding: 15px;
+  }
+  & .inputDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: $text-color;
+    gap: 5px;
+    & #firstnameAndLastnameInput,
+    #addressInput,
+    #ageInput {
+      height: 4vh;
+      border-radius: 5px;
+    }
+  }
+  & #addButton {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 120px;
+    height: 5vh;
+    border-radius: 30px;
+    background-color: $main-color;
+    color: black;
+    border-width: 0;
+  }
+}
+#addButton:hover {
+  background-color: rgb(85, 41, 167);
+  color: rgb(31, 31, 31);
+}
+.contact-cards {
+  display: flex;
+  margin: 15px;
+  gap: 10px;
+}
+.cardBody {
+  background-color: $secondary-color;
+  color: $text-color;
+  width: 200px;
+  border-radius: 25px;
+  
+  & ul {
+    list-style-type: none;
+    padding: 10px 0px;
+    align-items: start;
+    & li {
+      height: 2vh;
+      text-align: start;
+      align-items: center;
+      padding: 10px;
+      & strong {
+        color: white;
+        padding-left: 15px;
+      }
+      
+    }
+  }
+}

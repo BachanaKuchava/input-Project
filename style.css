@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(81, 31, 172);
+  font-family: "Sono", sans-serif;
+}
+
+.contact-area {
+  margin: auto;
+  width: 30%;
+  padding-top: 35px;
+}
+
+.contact-adder-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: rgb(19, 10, 44);
+  padding: 20px 50px;
+}
+.contact-adder-form h2 {
+  color: rgb(159, 127, 219);
+  padding: 15px;
+}
+.contact-adder-form .inputDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  color: rgb(159, 127, 219);
+  gap: 5px;
+}
+.contact-adder-form .inputDiv #firstnameAndLastnameInput,
+.contact-adder-form .inputDiv #addressInput,
+.contact-adder-form .inputDiv #ageInput {
+  height: 4vh;
+  border-radius: 5px;
+}
+.contact-adder-form #addButton {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 120px;
+  height: 5vh;
+  border-radius: 30px;
+  background-color: rgb(81, 31, 172);
+  color: black;
+  border-width: 0;
+}
+
+#addButton:hover {
+  background-color: rgb(85, 41, 167);
+  color: rgb(31, 31, 31);
+}
+
+.contact-cards {
+  display: flex;
+  margin: 15px;
+  gap: 10px;
+}
+
+.cardBody {
+  background-color: rgb(19, 10, 44);
+  color: rgb(159, 127, 219);
+  width: 200px;
+  border-radius: 25px;
+}
+.cardBody ul {
+  list-style-type: none;
+  padding: 10px 0px;
+  align-items: start;
+}
+.cardBody ul li {
+  height: 2vh;
+  text-align: start;
+  align-items: center;
+  padding: 10px;
+}
+.cardBody ul li strong {
+  color: white;
+  padding-left: 15px;
+}/*# sourceMappingURL=style.css.map */
